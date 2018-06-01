@@ -176,7 +176,6 @@ public class SignUpActivity extends AppCompatActivity {
     //SignIp Activity 로 전환
     public void signIn(View v) {
         Intent intent = new Intent(this, HomeActivity.class);
-        Toast.makeText(this,"가입",Toast.LENGTH_SHORT);
         startActivity(intent);
     }
 
