@@ -7,7 +7,7 @@
     tools:context=".BoardReviewAddActivity">
 
     <Button
-        android:id="@+id/btn_wirteReview"
+        android:id="@+id/btn_writeReview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -22,43 +22,44 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edit_wirteReview"
+        android:id="@+id/edit_writeReview"
         android:layout_width="350dp"
         android:layout_height="304dp"
-        android:layout_marginBottom="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="리뷰를 작성해주세요."
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btn_wirteReview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_modeName" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edit_modeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="모델명을 입력해주세요."
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edit_wirteReview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/ratingBar_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:stepSize="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_wirteReview" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_writeReview" />
 
 </android.support.constraint.ConstraintLayout>
