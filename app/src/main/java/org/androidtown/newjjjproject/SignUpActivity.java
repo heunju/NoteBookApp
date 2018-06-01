@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -175,6 +176,7 @@ public class SignUpActivity extends AppCompatActivity {
     //SignIp Activity 로 전환
     public void signIn(View v) {
         Intent intent = new Intent(this, HomeActivity.class);
+        Toast.makeText(this,"가입",Toast.LENGTH_SHORT);
         startActivity(intent);
     }
 
