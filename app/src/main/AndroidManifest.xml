@@ -30,7 +30,8 @@
         <activity android:name=".FreeBoardActivity" />
         <activity android:name=".BoardActivity" />
         <activity android:name=".BoardReviewAddActivity" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".FindPwActivity"></activity>
     </application>
 
 </manifest>
