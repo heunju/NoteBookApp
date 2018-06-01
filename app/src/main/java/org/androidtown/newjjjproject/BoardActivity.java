@@ -34,18 +34,24 @@ public class BoardActivity extends AppCompatActivity {
 
         item.add(new BoardItem(R.id.ratingBar, "",""));
 
-
-
-
         imgbtn_reviewAdd = findViewById(R.id.imgbtn_addReview);
         edit_modelName = findViewById(R.id.edit_modelName);
         btn_search = findViewById(R.id.btn_search);
         recyclerView = findViewById(R.id.recycler_board);
+
+
         adapter = new RecyclerAdapter(this, item);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
+
+
+
     }
+
+
+
 
     public void addReview(View view)
     {

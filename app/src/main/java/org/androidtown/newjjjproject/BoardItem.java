@@ -6,6 +6,7 @@ public class BoardItem {
     String txt_modelName;
     String txt_review;
 
+
     public BoardItem(int ratingBar, String txt_modelName, String txt_review)
     {
         this.ratingBar = ratingBar;
@@ -37,4 +38,9 @@ public class BoardItem {
     public void setTxt_review(String txt_review) {
         this.txt_review = txt_review;
     }
+
+
+
+
+
 }
